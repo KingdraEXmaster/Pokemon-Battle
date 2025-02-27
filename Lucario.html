@@ -6,7 +6,11 @@
     <script src="Lucario.js"></script>
 </head>
 <body>
-    <a-scene background="color: black" cursor="rayOrigin:mouse">
+    <a-scene background="color: blue" cursor="rayOrigin:mouse">
+        <a-assets>
+            <a-asset-item src="scene.gltf" id="qwerty"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#qwerty" scale="10 10 10" animation-mixer></a-entity>
         <a-sphere radius="2" position="0 3 0" color="white" color-toggle movement-control></a-sphere>
     </a-scene>
 </body>
